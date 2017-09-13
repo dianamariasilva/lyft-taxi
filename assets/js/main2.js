@@ -145,6 +145,9 @@ const app= {
             function(response, status) {
                 if (status === "OK") {
                     directionsDisplay.setDirections(response);
+                    var price_stimated = response.routes[0].overview_path.length / 10  + 'USD';
+                    var dolar=document.getElementById("dolar");
+                    dolar.createTextNode(price_stimated);             
                 } else {
                     app.functionErrorRoute();
                 }
@@ -160,3 +163,11 @@ const app= {
 function initMap(){
 	app.init();
 }
+
+document.getElementById("close").addEventListener("click", function(){
+    var maps= document.getElementById("map-section");
+    var inputs= document.getElementById("inputs");
+    
+    maps.removeChild(inputs);
+});
+
