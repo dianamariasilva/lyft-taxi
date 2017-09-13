@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Easy Vreco</title>
+    <!--zoom desde mobile-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Easy-vreco</title>
+    <!--typografia-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style3.css">
+</head>
+<body>
+    <section class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12" id="map" width="120%">
+                <!-- Aqui ira nuestro mapa -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-3">
+                <div id="findMe" class="btn btn-danger person"><i class="fa fa-user" aria-hidden="true"></i></div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <div class="btn btn-danger gift"><i class="fa fa-gift" aria-hidden="true"></i></div>
+            </div>
+            <div class="col-md-3 col-sm-3 text-center">
+                <img class="logo" src="assets/img/lyft-logo.png">
+            </div>
+        </div>
+        <div class="row inputs">
+            <div class="row">
+               <i class="glyphicon glyphicon-menu-down menu" aria-hidden="true"></i>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <div class="form-group">
+                    <label for="origin">Origen:</label>
+                    <input type="text" id="origin" name="origin" placeholder="Introduce una ubicación" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <div class="form-group">
+                    <label for="destiny">Destino:</label>
+                    <input type="text" id="destiny" name="destiny" placeholder="Introduce una ubicación" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <button id="route" class="btn btn-danger"><i class="fa fa-car" aria-hidden="true"></i> Set pickup</button>
+            </div>
+        </div>
+    </section>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--MAPA-->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Tu Archivo main.js -->
+    <script src="https://use.fontawesome.com/1625bb79ec.js"></script>
+    <script type="text/javascript" src="assets/js/main2.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDj_W1ZaIS_DRBNaqkYH6c9V2XZPdG743Y&callback=initMap&libraries=places"></script>
+    
+</body>
+</html>
